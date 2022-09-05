@@ -28,7 +28,7 @@ namespace Full_GRASP_And_SOLID.Library
         public void PrintRecipe()
         {
             Console.WriteLine($"Receta de {this.FinalProduct.Description}:");
-            int sumaTotal = 0;
+            double sumaTotal = 0;
             foreach (Step step in this.steps)
             {
                 sumaTotal += CalcularCostos.Calcular(step);
